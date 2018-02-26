@@ -30,7 +30,7 @@ const resolvers = {
         title
       })
 
-      return todos.find(todo => todo.userId === user.sub)
+      return todos.find(todo => todo.userId === user.sub && todo.title === title)
     }
   }
 }
